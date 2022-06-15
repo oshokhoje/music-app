@@ -88,3 +88,10 @@ body {
     text-decoration: none;
     color:  hsl(224, 23%, 55%);
 }
+
+
+/******** Responsive **************/
+
+@media (max-width: 23.437em) {
+    
+}
