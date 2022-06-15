@@ -1,120 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 * {
-    margin: 0;
     padding: 0;
-}
-@font-face {
-    font-family: 'Red Hat Display';
-    src: url(../fonts/RedHatDisplay-Medium.woff) format('woff'),
-        url(../fonts/RedHatDisplay-Medium.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Red Hat Display';
-    src: url(../fonts/RedHatDisplay-Bold.woff) format('woff'),
-        url(../fonts/RedHatDisplay-Bold.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Red Hat Display';
-    src: url(../fonts/RedHatDisplay-Regular.woff) format('woff'),
-        url(../fonts/RedHatDisplay-Regular.ttf) format('truetype');
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
 }
 body {
-    font-size: 1rem;
-}
-.box {
-    background: url(../images/pattern-background-desktop.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 980px;
-    height: 90vh;
-    margin: 40px auto;  
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/pattern-background-desktop.svg) no-repeat;
+    background-color: hsl(225, 100%, 94%);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid hsl(225, 100%, 94%);
-    box-shadow: 7px 7px 7px 1px hsl(225, 100%, 94%), -6px 0px 7px 1px hsl(225, 100%, 94%);
-    box-sizing: border-box;
+}
+.container {
+    width: 450px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.page-img img {
+    border-radius: 10px 10px 0 0;
 }
 .wrapper {
-    border: 1px solid hsl(225, 100%, 94%);
-    width: 450px;
-    height: max-content;
-    overflow: hidden;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    box-shadow: 1px 0px 5px 1px hsl(225, 100%, 94%), -1px 0px 5px 1px hsl(225, 100%, 94%);
-    box-sizing: border-box;
-    border-radius: 0 0 10px 10px;
-}
-.page-img {
-    border-radius: 10px 10px 0 0;
-    width: 450px;
+    padding: 15px 10px;
+    background-color: #fff;
 }
 .order {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'RedHatDisplay-Bold';
-    font-size: 20px;
-    font-weight: 700;
+    text-align: center;
 }
-.text {
-    margin-left: 65px;
-    margin-right: 65px;
-    margin-bottom: 15px;
-    font-family: 'Red Hat Display';
-    font-weight: 700;
-    color: #a9a9a9;
+.order h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.order p {
+    color:  hsl(224, 23%, 55%);
+    padding: 0 40px;
+    margin-bottom: 20px;
 }
 .meta {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: row;   
-    margin: 0 auto;
+    flex-direction: row;
     background-color: hsl(225, 100%, 98%);
-    width: 300px;
-    margin-bottom: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
+    width: 330px;
+    height: 90px;
+    margin: auto;
+    border-radius: 15px;
+    padding-left: 20px;
 }
-.music-icon, .bold {
+.annual {
+    margin-left: 15px;
+}
+.annual h2 {
+    font-size: 16px;
+}
+.annual p {
+    color:  hsl(224, 23%, 55%);
+    font-size: 15px;
+}
+.meta a {
+    margin-left: 70px;
+}
+.btn {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-.bold {
-    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 10px;
-    line-height: 0.7;
+    margin-top: 20px;
 }
-.meta>.change {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 65px;
-}
-.page-btn {
-background: hsl(245, 75%, 52%);
-padding: 10px 20px;
-margin-bottom: 20px;
-width: 300px;
-box-sizing: border-box;
-border-radius: 10px;
-color: #fff;
-text-decoration: none;
-font-family: 'RedHatDisplay-Regular';
-font-weight: 500;
-font-size: 14px;
-}
-.cancel {
-    margin-bottom: 50px;
+.btn a:first-child {
     text-decoration: none;
-    color: #a9a9a9;
+    color: #fff;
+    background: hsl(245, 75%, 52%);
+    width: 330px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
 }
-
-
+.btn a:last-child {
+    text-decoration: none;
+    color:  hsl(224, 23%, 55%);
+}
